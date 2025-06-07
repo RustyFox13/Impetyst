@@ -1,3 +1,119 @@
+Impestyst - My Custom BigCommerce Catalyst Storefront
+
+
+
+Table of Contents
+
+Overview
+
+Relationship to Original Catalyst
+
+Getting Started
+
+Prerequisites
+
+Installation
+
+Connecting to Your BigCommerce Store
+
+Local Development
+
+Deployment
+
+Contributing
+
+License
+
+Attribution
+
+Contact
+
+Overview
+
+This repository contains a customized version of the BigCommerce Catalyst headless commerce storefront framework. Catalyst is built with Next.js, leverages React storefront components, and is backed by the BigCommerce GraphQL Storefront API.
+
+This custom storefront is designed to showcase skillsets acquired while working with the Senior Support team of BigCommerce, as well as to provide hands-on experience to enhance troubleshooting. 
+
+Relationship to Original Catalyst
+This project is a fork of the official BigCommerce Catalyst repository. We regularly aim to pull in updates from the upstream Catalyst project to ensure we benefit from BigCommerce's ongoing development, bug fixes, and performance improvements.
+
+Original Catalyst Description (from their README, for context):
+
+Catalyst is the composable, fully customizable headless commerce framework for BigCommerce. Catalyst is built with Next.js, uses our React storefront components, and is backed by the GraphQL Storefront API. By choosing Catalyst, you'll have a fully-functional storefront within a few seconds, and spend zero time on wiring up APIs or building SEO, Accessibility, and Performance-optimized ecommerce components you've probably written many many times before.
+
+Key Features & Customizations
+Here's a summary of the significant changes and additions made in this custom repository:
+
+Getting Started
+To get a local copy up and running, follow these simple steps.
+
+Prerequisites
+A BigCommerce account.
+Node.js version 20 or 22.
+Corepack-enabled pnpm: corepack enable pnpm
+Installation
+Clone this repository:
+Bash
+
+git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
+Install dependencies:
+Bash
+
+pnpm install
+Connecting to Your BigCommerce Store
+Catalyst requires connection to a BigCommerce store to fetch product data and other storefront information.
+
+Run the Catalyst setup process:
+
+Bash
+
+pnpm create @bigcommerce/catalyst@latest init
+Follow the prompts to connect your Catalyst project to your BigCommerce store. This will generate a .env.local file with your store's API credentials.
+
+Note: If you already have a .env.local file from a previous setup, ensure it's configured correctly for your desired BigCommerce store and channel.
+
+Local Development
+To run the development server:
+
+Bash
+
+pnpm run dev
+This will start the local development server, typically accessible at http://localhost:3000.
+
+Deployment
+Deployment instructions will vary depending on your chosen hosting provider (e.g., Vercel, Netlify, AWS Amplify, etc.).
+
+General steps for Vercel (common for Next.js applications):
+
+Create a new project on Vercel.
+Connect your GitHub repository.
+Configure environment variables (ensure all necessary BigCommerce API credentials from your .env.local are added to Vercel's environment variables).
+Vercel will automatically detect that it's a Next.js project and deploy it.
+Refer to your chosen hosting provider's documentation for detailed deployment instructions.
+
+Contributing
+We welcome contributions to this custom Catalyst storefront! If you have suggestions for improvements, bug fixes, or new features, please open an issue or submit a pull request.
+
+Please ensure your contributions align with the project's goals and adhere to the original BigCommerce Catalyst contribution guidelines where applicable.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+Note: The original BigCommerce Catalyst source code is also under the MIT License. Your modifications and any derivative work are subject to the terms of this license.
+
+Attribution
+This project is a custom fork and modification of the excellent BigCommerce Catalyst headless commerce framework. We extend our gratitude to the BigCommerce team for creating and open-sourcing this powerful foundation.
+
+Contact
+For any questions, feedback, or inquiries, please contact:
+
+Russell Covey
+GitHub: https://github.com/RustyFox13
+Email: russellcovey@outlook.com
+
+
+
 ⚠️ **IMPORTANT:** As of January 6, 2025, the `main` branch is frozen. The default branch is now `canary`. Please make sure to work with and submit PRs to the `canary` branch.
 
 
